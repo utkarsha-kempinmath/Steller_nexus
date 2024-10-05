@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanets Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1{
+            text-decoration: underline;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #dff0d8;
+            color: #3c763d;
+            border-radius: 5px;
+        }
+        .result p {
+            font-size: 18px;
+        }
+        .score {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2d6a4f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Exoplanets Quiz (MCQs)</h1>
+    <form id="quizForm">
+
+        <!-- Easy Level -->
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. What is an exoplanet?</h3>
+            <label><input type="radio" name="q1" value="a"> a) A planet that orbits the Sun</label>
+            <label><input type="radio" name="q1" value="b"> b) A planet that orbits a star outside the Solar System</label>
+            <label><input type="radio" name="q1" value="c"> c) A planet that doesn't orbit any star</label>
+            <label><input type="radio" name="q1" value="d"> d) A planet within the asteroid belt</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Which was the first exoplanet discovered around a Sun-like star?</h3>
+            <label><input type="radio" name="q2" value="a"> a) Proxima Centauri b</label>
+            <label><input type="radio" name="q2" value="b"> b) 51 Pegasi b</label>
+            <label><input type="radio" name="q2" value="c"> c) Kepler-22b</label>
+            <label><input type="radio" name="q2" value="d"> d) Gliese 581g</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. Which method has been most successful in detecting exoplanets?</h3>
+            <label><input type="radio" name="q3" value="a"> a) The Radial Velocity Method</label>
+            <label><input type="radio" name="q3" value="b"> b) The Transit Method</label>
+            <label><input type="radio" name="q3" value="c"> c) The Direct Imaging Method</label>
+            <label><input type="radio" name="q3" value="d"> d) The Gravitational Lensing Method</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Which space telescope is responsible for discovering over 2,000 exoplanets?</h3>
+            <label><input type="radio" name="q4" value="a"> a) Hubble</label>
+            <label><input type="radio" name="q4" value="b"> b) Spitzer</label>
+            <label><input type="radio" name="q4" value="c"> c) Kepler</label>
+            <label><input type="radio" name="q4" value="d"> d) James Webb</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. What is the term used for the area around a star where liquid water could exist?</h3>
+            <label><input type="radio" name="q5" value="a"> a) The Cold Zone</label>
+            <label><input type="radio" name="q5" value="b"> b) The Goldilocks Zone</label>
+            <label><input type="radio" name="q5" value="c"> c) The Frozen Zone</label>
+            <label><input type="radio" name="q5" value="d"> d) The Ice Zone</label>
+        </div>
+
+        <!-- Medium Level -->
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. What kind of planet is classified as a "Hot Jupiter"?</h3>
+            <label><input type="radio" name="q6" value="a"> a) A large planet made of rock</label>
+            <label><input type="radio" name="q6" value="b"> b) A gas giant that orbits very close to its star</label>
+            <label><input type="radio" name="q6" value="c"> c) A small icy planet far from its star</label>
+            <label><input type="radio" name="q6" value="d"> d) A planet with a thick atmosphere and active volcanoes</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. What is the name of the nearest known exoplanet to Earth?</h3>
+            <label><input type="radio" name="q7" value="a"> a) Gliese 581g</label>
+            <label><input type="radio" name="q7" value="b"> b) Kepler-452b</label>
+            <label><input type="radio" name="q7" value="c"> c) Proxima Centauri b</label>
+            <label><input type="radio" name="q7" value="d"> d) TRAPPIST-1e</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Which of the following methods allows scientists to directly capture images of exoplanets?</h3>
+            <label><input type="radio" name="q8" value="a"> a) Transit Photometry</label>
+            <label><input type="radio" name="q8" value="b"> b) Radial Velocity</label>
+            <label><input type="radio" name="q8" value="c"> c) Direct Imaging</label>
+            <label><input type="radio" name="q8" value="d"> d) Microlensing</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. What type of exoplanet is considered most likely to harbor life?</h3>
+            <label><input type="radio" name="q9" value="a"> a) Gas Giants</label>
+            <label><input type="radio" name="q9" value="b"> b) Super-Earths in the habitable zone</label>
+            <label><input type="radio" name="q9" value="c"> c) Hot Jupiters</label>
+            <label><input type="radio" name="q9" value="d"> d) Rogue Planets</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. Which star system has seven Earth-sized planets, three of which are in the habitable zone?</h3>
+            <label><input type="radio" name="q10" value="a"> a) Alpha Centauri</label>
+            <label><input type="radio" name="q10" value="b"> b) TRAPPIST-1</label>
+            <label><input type="radio" name="q10" value="c"> c) Tau Ceti</label>
+            <label><input type="radio" name="q10" value="d"> d) Vega</label>
+        </div>
+
+   <button type="button" class="submit-btn" onclick="checkAnswers()">Submit</button>
+
+            <div id="result" class="result"></div>
+        </form>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: 'b',
+                q2: 'b',
+                q3: 'b',
+                q4: 'c',
+                q5: 'b',
+                q6: 'b',
+                q7: 'c',
+                q8: 'c',
+                q9: 'b',
+                q10: 'b',
+            };
+
+            let score = 0;
+            const form = document.forms.quizForm;
+
+            for (let question in correctAnswers) {
+                if (form[question].value === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            const result = document.getElementById('result');
+            result.style.display = 'block';
+            result.textContent = 'Your score is: ' + score + '/10';
+        }
+    </script>
+
+</body>
+</html>
